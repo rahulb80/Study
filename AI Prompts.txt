@@ -1,0 +1,69 @@
+
+
+------------
+
+You are an expert technical summarizer and educator.
+I will provide you name and link to the udemy course and the topics to be considered for cheet sheet. Your task is to create a well-organized cheat sheet containing only the technical topics, programming language details with examples, tools, tricks, and tips.
+
+Udemy Course Name : React Native - The Practical Guide [2025]
+URL Link to course : https://www.udemy.com/course/react-native-the-practical-guide/?kw=react+native+pra&src=sac&subs_filter_type=subs_only&couponCode=KEEPLEARNING
+
+topics: 
+Welcome To This Course & What To Expect!
+What Is React Native?
+Join our Online Learning Community
+A Glance Under The Hood Of React Native
+Creating React Native Projects: Expo CLI vs React Native CLI
+Creating a New React Native Project
+Analyzing The Created Project
+Running Our First App On A Real Device!
+Setting Up A Local Development Environment
+Course Setup
+About This Course
+Course Resources, Code Snapshots & How To Use
+
+
+Instructions:
+
+Exclude any non-technical or motivational content.
+
+Group related concepts together under clear headings and subheadings.
+
+For each topic, provide:
+
+Concept name – short and clear
+
+One-sentence explanation – concise and beginner-friendly
+
+Code or usage example – in the relevant programming language
+
+Tips/Tricks – bullet points if available
+
+Keep language concise and scannable (no long paragraphs).
+
+Use bullet points, numbered lists, and code blocks for clarity.
+
+If there are multiple tools or commands, put them in table format with columns: Tool/Command | Description | Example/Usage.
+
+Maintain technical accuracy.
+
+Output format:
+
+markdown
+Copy
+Edit
+## Topic 1: [Title]
+- Summary: [One line explanation]
+- Example:
+```code here```
+- Tips:
+  - [Tip 1]
+  - [Tip 2]
+  
+## Topic 2: [Title]
+...
+At the end, provide a "Quick Reference Table" for all tools, commands, or shortcuts mentioned.
+Give me in markdown format. 
+-----------------------------------
+
+now give me markdown for below topics, there are timings given in below topics list, ignore that:
