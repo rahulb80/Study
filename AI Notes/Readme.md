@@ -44,3 +44,49 @@
   In the context of AI agents, tools are external functions or resources (like APIs or databases) that an agent can utilize to interact with its environment and perform actions beyond its core LLM capabilities.
 ### Tasks (AI Agents): 
   Tasks are the specific objectives or actions that an AI agent is designed to achieve, ranging from simple information retrieval to complex multi-step processes like planning or problem-solving.
+### ReAct Agent 
+### Output parser
+### Chain of thoughts Prompting
+### composition of a prompt
+- Output indicator
+
+# Useful Prompts
+## hwchase17/react
+This prompt is sent to LLM along with agents that LLM can use for to take specific actions. It also takes scratchpad, which is kind of history of what happened until now with Agent so far. It will return an answer may be a final answer that the agent finished his job and we have the answer, Or it's going to be which tools that we need to invoke now with which arguments.
+
+
+# Code Examples
+## LangChain Tool 
+- has properties 
+  - Name
+	- function that LLM is going to call
+	- Description - apt description that will guide LLM to use this tool in appropriate scenario
+
+```tools_for_agent = [
+        Tool(
+            name="Crawl Google 4 linkedin profile page",
+            func=get_profile_url_tavily,
+            description="useful for when you need get the Linkedin Page URL",
+        )     
+    ]
+```
+Agent Code : 
+
+```
+react_prompt = hub.pull("hwchase17/react")
+agent = create_react_agent(llm=llm, tools=tools_for_agent, prompt=react_prompt)
+agent_executor = AgentExecutor(agent=agent, tools=tools_for_agent, verbose=True)
+```
+
+So we have our prompt, then we have here our agent.
+This Agent basically holds the way we want to communicate with the LLM and which tools that we have, and then how to parse the outputs that we get from the LLM.
+
+Now to execute the Agent will LLM to get our output, we provide it the runtime : how to run in loops, etc.
+So we want to create something which is called an AgentExecutor.
+It's going to receive that agent, it's going to receive a list of tools because those are actually the tools that will be invoked. And we want to supply verbose equals true, so we'll see extensive logging and we'll understand a bit more how this agent is working.
+
+> Why do we need to create a react agent and then create from it an agent executor.
+But you can think about it as the agent is going to be the recipe, what we're sending to the LM and
+getting back to it and parsing it.
+But the agent executor is going to be responsible for orchestrating all of this and to be actually invoking those Python functions.
+
