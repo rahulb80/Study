@@ -2,7 +2,9 @@
 ## Code Resources
 - LangChain Udemy Course - Code Resources file
   - https://github.com/emarco177?tab=repositories
-
+  - Details of the code repo are at :
+      - https://github.com/rahulb80/Study/blob/main/AI%20Notes/LangChain%20Udemy%20Course%20-%20Code%20Resources.md
+    
 # Packages
 - LangChain packages,
 - LangChain openai package chatopenai class,
