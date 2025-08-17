@@ -29,8 +29,12 @@
 # Tools 
 - Free LLM
   - Gemini Vertex AI - Get Free $300 credit for using LLM
-  
- 
+- List of LLMs
+  - GPT4o mini  
+  - GPT 3.5
+  - GPT 4 Turbo
+  - Gemini 1.5
+  - Anthropic Sonnet
 # AI Terms
 ### Agent (AI Agent): 
   An AI agent is an autonomous system that uses an LLM to perceive its environment, make decisions, and take actions towards achieving a specific goal, often leveraging external tools.
