@@ -76,6 +76,10 @@ Agent Code :
 react_prompt = hub.pull("hwchase17/react")
 agent = create_react_agent(llm=llm, tools=tools_for_agent, prompt=react_prompt)
 agent_executor = AgentExecutor(agent=agent, tools=tools_for_agent, verbose=True)
+
+result = agent_executor.invoke(
+        input={"input": prompt_template.format_prompt(name_of_person=name)}
+    )
 ```
 
 So we have our prompt, then we have here our agent.
@@ -90,3 +94,7 @@ But you can think about it as the agent is going to be the recipe, what we're se
 getting back to it and parsing it.
 But the agent executor is going to be responsible for orchestrating all of this and to be actually invoking those Python functions.
 
+At last, we will invoke the agent_executor by calling the invoke method on it. 
+` agent_executor.invoke() `
+
+> Complete code for this is at URL : https://github.com/emarco177/IceBreaker/blob/main/agents/linkedin_lookup_agent.py
