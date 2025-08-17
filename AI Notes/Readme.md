@@ -9,11 +9,20 @@
       - https://github.com/rahulb80/Study/blob/main/AI%20Notes/LangChain%20Udemy%20Course%20-%20Code%20Resources.md
     
 # Packages
-- LangChain packages,
-- LangChain openai package chatopenai class,
-- LangChain community,
-- LangChain hub,
-- LangChain core package class prompttemplate,
+- dotenv package method load_dotenv
+  - Used to fetch environment variables
+- LangChain package
+  - hub
+  - community
+- langchain_openai package
+  - ChatOpenAI class,
+- langchain.prompts.prompt package
+  - PromptTemplate class
+- langchain_core.tools package
+  - Tool class
+- langchain.agents package
+  - create_react_agent
+  - AgentExecutor      
 - LangChain chat models,
 - LLM chains
 
