@@ -1,0 +1,47 @@
+Markdown file shortcuts (general)
+1. Text styling
+Bold: **text** or __text__
+Italic: *text* or _text_
+Bold and Italic: ***text***
+Strikethrough: ~~text~~
+Inline Code: `code`
+Highlight: ==highlight== 
+Subscript: H~2~O
+Superscript: X^2^
+Underline: <ins>text</ins> (uses HTML tag) 
+2. Headings
+Heading 1: # Heading
+Heading 2: ## Heading
+Heading 3: ### Heading
+Heading 4: #### Heading
+Heading 5: ##### Heading
+Heading 6: ###### Heading 
+3. Lists
+Unordered List: * item or - item
+Ordered List: 1. item or 1) item
+Nested List (indent): Use Tab or Shift + Tab
+Task List: - [ ] task item or - [x] completed task item 
+4. Other formatting
+Blockquote: > quoted text
+Horizontal Rule: --- or *** or ___
+Links: [link title](url)
+Images: ![alt text](image.jpg)
+Code Block (fenced): ``` or ```json
+Table:
+{content: }
+ 
+Header 	Title
+Cell 1	Cell 2
+```	
+Emojis: :smile: 
+Markdown shortcuts (VS Code example)
+Many text editors offer specific shortcuts for Markdown files. For example, in VS Code:
+Bold: Ctrl/Cmd + B
+Italic: Ctrl/Cmd + I
+Insert Link: Ctrl/Cmd + M Ctrl + L
+Insert Image: Ctrl/Cmd + M Ctrl + I
+Toggle Blockquote: Ctrl/Cmd + M Ctrl + Q
+Toggle Preview: Ctrl/Cmd + Shift + V
+Toggle Preview to the Side: Ctrl/Cmd + K V
+Create Table of Contents: (Requires extension like Markdown All in One) 
+Note that the availability and exact shortcuts may vary depending on the editor and any installed extensions. Consulting the specific documentation of the editor is recommended for the most accurate and up-to-date information. 
