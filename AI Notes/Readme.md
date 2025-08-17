@@ -1,5 +1,8 @@
 # Resources
 ## Code Resources
+- LangChain Official Documentation
+  - https://python.langchain.com/docs/introduction/
+    
 - LangChain Udemy Course - Code Resources file
   - https://github.com/emarco177?tab=repositories
   - Details of the code repo are at :
