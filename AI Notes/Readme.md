@@ -40,6 +40,9 @@
   An AI agent is an autonomous system that uses an LLM to perceive its environment, make decisions, and take actions towards achieving a specific goal, often leveraging external tools.
 ### Large Language Model (LLM): 
   A large language model is a deep learning model trained on a massive dataset of text, capable of understanding, generating, and processing human language.
+
+### RAG 
+	RAG is an AI framework that marries the capabilities of traditional information retrieval systems (like search engines and databases) with the generative power of large language models (LLMs). Essentially, it's a technique that enhances the accuracy and reliability of generative AI models by providing them with relevant information fetched from external knowledge bases.
 ### Tools (AI Agents): 
   In the context of AI agents, tools are external functions or resources (like APIs or databases) that an agent can utilize to interact with its environment and perform actions beyond its core LLM capabilities.
 ### Tasks (AI Agents): 
@@ -49,10 +52,12 @@
 ### Chain of thoughts Prompting
 ### composition of a prompt
 - Output indicator
+### Tavily Search API
+- paid api to search web for latest info 
 
 # Useful Prompts
 ## hwchase17/react
-This prompt is sent to LLM along with agents that LLM can use for to take specific actions. It also takes scratchpad, which is kind of history of what happened until now with Agent so far. It will return an answer may be a final answer that the agent finished his job and we have the answer, Or it's going to be which tools that we need to invoke now with which arguments.
+	This prompt is sent to LLM along with agents that LLM can use for to take specific actions. It also takes scratchpad, which is kind of history of what happened until now with Agent so far. It will return an answer may be a final answer that the agent finished his job and we have the answer, Or it's going to be which tools that we need to invoke now with which arguments.
 
 
 # Code Examples
@@ -95,6 +100,7 @@ getting back to it and parsing it.
 But the agent executor is going to be responsible for orchestrating all of this and to be actually invoking those Python functions.
 
 At last, we will invoke the agent_executor by calling the invoke method on it. 
+
 ` agent_executor.invoke() `
 
 > Complete code for this is at URL : https://github.com/emarco177/IceBreaker/blob/main/agents/linkedin_lookup_agent.py
